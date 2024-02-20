@@ -93,7 +93,85 @@ let Men = {
     }
 }
 
-console.log(Men['Dress']['Shirt'])
+//console.log(Men['Dress']['Shirt'])
+
+// For in loop
+for(let props in Men['Dress']){
+    //console.log(props)
+}
+
+// Decision making
+if(Men['name'] === "Bill Gates"){
+    console.log("First Person Found")
+}else if(Men['Bill Gates']){
+    console.log("Second Person Found")
+}else{
+    console.log("No Person Found")
+}
+
+// Simple Function
+function SimpleFunc() {
+    //console.log("Simple Function")
+}
+SimpleFunc()
+
+
+// Parameterized functions
+function ParameterFunc(value) {
+    //console.log(value)
+}
+ParameterFunc("Parameterized Function")
+
+// Rest Parameter functions
+function RestPeraFunc(...item){
+    //console.log(item)
+}
+
+RestPeraFunc(10,29,30,50)
+
+
+// Function return
+function ReturnFunc(){
+    return 100
+}
+
+// console.log(ReturnFunc())
+
+// Anonymous functions
+const AnonymousFunc = function (){
+    //console.log("Anonymous Function")
+}
+AnonymousFunc()
+
+// Arrow Anonymous functions
+const ArrowFunc = () => {
+    //console.log("Arrow Function")
+}
+
+ArrowFunc()
+
+// ES6 Array
+let Array = [
+    {
+       name:"Rehad",
+       age:"20",
+       city:"Pabna"
+    },
+    {
+        name:"Shawn",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Rabbil",
+        age:"40",
+        city:"Dhaka"
+    }
+]
+
+//console.log(Array[2]['name'])
+
+
 
 
 
