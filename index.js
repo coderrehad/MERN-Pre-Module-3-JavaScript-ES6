@@ -151,7 +151,7 @@ const ArrowFunc = () => {
 ArrowFunc()
 
 // ES6 Array
-let Array = [
+let array = [
     {
        name:"Rehad",
        age:"20",
@@ -171,6 +171,78 @@ let Array = [
 
 //console.log(Array[2]['name'])
 
+// ES6 Multidimensional Array
+let ArrayOne = [
+    {
+        name:"Rehad",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Shawn",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Rabbil",
+        age:"40",
+        city:"Dhaka"
+    }
+]
+
+let ArrayTwo = [
+    {
+        name:"Rehad",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Shawn",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Rabbil",
+        age:"40",
+        city:"Dhaka"
+    }
+]
+
+let ArrayThree = [
+    {
+        name:"Rehad",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Shawn",
+        age:"20",
+        city:"Pabna"
+    },
+    {
+        name:"Rabbil",
+        age:"40",
+        city:"Dhaka"
+    }
+]
+
+let totalArray = [ArrayOne,ArrayTwo,ArrayThree]
+//console.log(totalArray)
+
+// ES6 Map
+let myMap = new Map();
+
+myMap.set("name","Rehad")
+myMap.set("name2","Rabbil")
+myMap.set("name3","Rupom")
+myMap.set("name4","Rana")
+myMap.set("name5","Roy")
+myMap.set("name6","Rehan")
+
+// values() & keys()
+for(let item of myMap.keys()){
+    console.log(item)
+}
 
 
 
