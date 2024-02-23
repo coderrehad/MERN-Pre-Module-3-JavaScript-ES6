@@ -240,9 +240,52 @@ myMap.set("name5","Roy")
 myMap.set("name6","Rehan")
 
 // values() & keys()
+// Map() => delete,clear,get,has
+//myMap.delete("name")
+//myMap.clear()
+//console.log(myMap.get("name"))
+//console.log(myMap.has("name10"))
+
 for(let item of myMap.keys()){
-    console.log(item)
+    //console.log(item)
 }
+
+
+// ES6 Set()
+let mySet = new Set()
+mySet.add('Bangladesh')
+mySet.add('India')
+mySet.add('America')
+mySet.add('London')
+mySet.add('Pakistan')
+mySet.add('India')
+
+//Set() => delete,clear,size,values,has
+//mySet.delete('Bangladesh')
+//mySet.clear()
+//console.log(mySet.size)
+//console.log(mySet.values())
+//console.log(mySet.has('India'))
+
+//console.log(mySet)
+
+// ES6 class keyword
+class myClass{
+    myFunc(){
+        console.log("Function one")
+    }
+    myFuncTwo(){
+        console.log("Function Two")
+    }
+    myFuncThree(){
+        console.log("Function Two")
+    }
+}
+
+let Obj = new myClass;
+Obj.myFunc()
+Obj.myFuncTwo()
+
 
 
 
