@@ -269,16 +269,16 @@ mySet.add('India')
 
 //console.log(mySet)
 
-// ES6 class keyword
+// ES6 classes
 class myClass{
     myFunc(){
-        console.log("Function one")
+        //console.log("Function one")
     }
     myFuncTwo(){
-        console.log("Function Two")
+        //console.log("Function Two")
     }
     myFuncThree(){
-        console.log("Function Two")
+        //console.log("Function Two")
     }
 }
 
@@ -286,27 +286,41 @@ let Obj = new myClass;
 Obj.myFunc()
 Obj.myFuncTwo()
 
+// JavaScript Classes
+class myClass2 {
+    constructor(a,b) {
+        this.firstNum = a;
+        this.lastNum = b;
+    }
+    firstFunc(){
+        let result = this.firstNum+this.lastNum;
+        //console.log(result)
+    }
+}
+let myClassObj = new myClass2(10,20)
+myClassObj.firstFunc();
 
 
+// With static keyword
+class StaticClass {
+    static staticFunc(){
+        //console.log("Hello Static")
+    }
+}
+StaticClass.staticFunc()
 
+// ES6 class inheritance & overriding
+class parent{
+    Property(){
+        console.log(1000)
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class child extends parent{
+    Property(){
+        console.log(2000)
+    }
+}
+let childObj = new child();
+childObj.Property()
 
